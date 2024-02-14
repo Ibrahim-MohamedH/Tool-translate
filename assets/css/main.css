@@ -1,0 +1,66 @@
+:root {
+  /* colors */
+  --primary-text: #0c1421;
+  --secondary-text: #313957;
+  /* all colors */
+  --Darker-primary: #3568d4;
+  --main-color-primary: #3e7bfa;
+  --lighter-primary: #6698fa;
+  --Dark-one: #1c1c28;
+  --Dark-two: #28293d;
+  --Teal: #00cfde;
+  --red: #ff3b3b;
+  --green: #06c270;
+  --blue: #0063f7;
+  --purble: #4c0099;
+  --light-one: #ffffff;
+  --light-one: #fafafc;
+  --mint-green: #03bc6c;
+  --linear-blue: #2b6de6;
+  /* fonts */
+  --font-family-primary: "Cairo", sans-serif;
+  --font-family-secondary: "Roboto", sans-serif;
+}
+* {
+  font-family: var(--font-family-primary);
+}
+*::first-letter {
+  text-transform: capitalize;
+}
+/*--------------------------------------------------------------
+# login page
+--------------------------------------------------------------*/
+#access .card {
+  border: none;
+}
+#access h1 {
+  color: var(--primary-text);
+}
+#access h6 {
+  color: var(--secondary-text);
+}
+#access form button {
+  background-color: var(--main-color-primary);
+  color: var(--light-one);
+}
+#access form .form-check a {
+  color: var(--main-color-primary);
+}
+#access form label {
+  color: var(--primary-text);
+}
+#access .socialite a {
+  background-color: #f7fbff;
+  border: 1px solid #d4d7e3;
+}
+#access input.form-control {
+  background-color: #f7fbff;
+  border: 1px solid #d4d7e3;
+  border-radius: 12px;
+}
+#access .form-check-label {
+  color: var(--Dark-one);
+}
+#access #register input.form-control {
+  line-height: 2;
+}
