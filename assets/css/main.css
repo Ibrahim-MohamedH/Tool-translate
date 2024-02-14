@@ -17,6 +17,16 @@
   --light-one: #fafafc;
   --mint-green: #03bc6c;
   --linear-blue: #2b6de6;
+  /* linear gradiant */
+  --linear-main: linear-gradient(
+    90deg,
+    rgba(98, 98, 98, 0.15) 19%,
+    rgba(11, 231, 221, 0.15) 26%,
+    rgba(98, 98, 98, 0) 33%,
+    rgba(98, 98, 98, 0.15) 62%,
+    rgba(205, 169, 52, 0.15) 68%,
+    rgba(98, 98, 98, 0.15) 76%
+  );
   /* fonts */
   --font-family-primary: "Cairo", sans-serif;
   --font-family-secondary: "Roboto", sans-serif;
@@ -28,7 +38,49 @@
   text-transform: capitalize;
 }
 /*--------------------------------------------------------------
-# login page
+# Navbar
+--------------------------------------------------------------*/
+header {
+  background: var(--linear-main);
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+header nav {
+  background-color: #a1a1a1;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+}
+header nav .navbar-brand:focus-visible {
+  outline: none;
+}
+header nav .avatar .nav-link {
+  overflow: hidden;
+}
+/*--------------------------------------------------------------
+# create Project Page
+--------------------------------------------------------------*/
+#createProject h1,
+#createProject h4 {
+  color: black;
+}
+#createProject form label {
+  color: var(--primary-text);
+}
+#createProject form input.form-control {
+  background-color: #f7fbff;
+  border: 1px solid #d4d7e3;
+  border-radius: 12px;
+  line-height: 2;
+}
+#createProject form .btn {
+  border-radius: 12px;
+}
+#createProject form .btn:first-child {
+}
+/*--------------------------------------------------------------
+# login Page
 --------------------------------------------------------------*/
 #access .card {
   border: none;
@@ -61,6 +113,14 @@
 #access .form-check-label {
   color: var(--Dark-one);
 }
-#access #register input.form-control {
+#access input.form-control {
   line-height: 2;
+}
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+footer {
+  background: var(--linear-main);
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
 }
