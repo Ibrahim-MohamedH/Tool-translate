@@ -78,6 +78,10 @@ header nav .avatar .nav-link {
   border-radius: 12px;
 }
 #createProject form .btn:first-child {
+  background-color: var(--main-color-primary);
+}
+#createProject form .btn:last-child {
+  background-color: var(--Dark-two);
 }
 /*--------------------------------------------------------------
 # login Page
@@ -123,4 +127,5 @@ footer {
   background: var(--linear-main);
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
+  color: black;
 }
