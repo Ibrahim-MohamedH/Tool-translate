@@ -31,7 +31,7 @@
     rgba(205, 169, 52, 0.15) 68%,
     rgba(98, 98, 98, 0.15) 76%
   );
-  --linear-text: linear-gradient(45deg, #1d4ed8 60%, #55cbfb);
+  --linear-text: linear-gradient(45deg, #1d4ed8, #55cbfb);
   /* fonts */
   --font-family-primary: "Cairo", sans-serif;
   --font-family-secondary: "Roboto", sans-serif;
@@ -66,8 +66,21 @@ header nav {
 header nav .navbar-brand:focus-visible {
   outline: none;
 }
+header nav .signUp {
+  border: 1px solid var(--Dark-one);
+  color: var(--Dark-one);
+  border-radius: var(--main-radius);
+}
+header nav .signIn {
+  background-color: var(--blue);
+  color: var(--light-one);
+  border-radius: var(--main-radius);
+}
 header nav .avatar .nav-link {
   overflow: hidden;
+}
+header nav .nav-link.active {
+  text-decoration: underline;
 }
 /*--------------------------------------------------------------
 # Main page
@@ -385,6 +398,92 @@ header nav .avatar .nav-link {
   color: var(--light-one);
 }
 /*--------------------------------------------------------------
+# Way-translate page
+--------------------------------------------------------------*/
+#Way-translate {
+  background-image: url("../images/wayTranslate_bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#Way-translate .card:last-child a.btn:last-child {
+  background-color: var(--main-color-primary);
+  color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+
+#Way-translate .card:first-child a.btn:last-child {
+  background-color: var(--green);
+  color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+
+#Way-translate .card {
+  background: #fff2f221;
+  box-shadow: 0 4px 8px #0000001a;
+  box-shadow: 0 15px 15px #00000017;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border-radius: 10px;
+}
+#Way-translate .button {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 9px 9px;
+  gap: 8px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  color: var(--light-one);
+  background-color: #5a5a5a;
+  border-radius: 100px;
+  cursor: pointer;
+}
+#Way-translate .icon {
+  background-color: #9c9c9c;
+  color: var(--light-one);
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  padding: 8px 12px;
+  margin-left: -5px;
+}
+#Way-translate .card p {
+  color: var(--light-one);
+}
+/*--------------------------------------------------------------
+# Verification, OTP page
+--------------------------------------------------------------*/
+#OTP,
+#verification {
+  min-height: 100vh;
+  background-image: url(../images/elipse-lg.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#OTP button.btn,
+#verification a.btn {
+  background: var(--linear-text);
+  border-radius: var(--main-radius);
+  color: var(--light-one);
+  background-repeat: no-repeat;
+}
+#OTP form input {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-main);
+  width: 52px;
+  height: 52px;
+  font-size: 25px;
+}
+#OTP form input:focus,
+#OTP form input:focus-visible {
+  outline: none;
+}
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 footer {
@@ -392,4 +491,27 @@ footer {
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
   color: black;
+}
+/*--------------------------------------------------------------
+# Error 404 page
+--------------------------------------------------------------*/
+#error404 .container {
+  min-height: 85vh;
+}
+/*--------------------------------------------------------------
+# media Query
+--------------------------------------------------------------*/
+@media (max-width: 992px) {
+  #verification {
+    background-image: url(../images/elipse-md.png);
+  }
+}
+
+@media (max-width: 576px) {
+  #verification {
+    background-image: url(../images/elipse-sm.png);
+  }
+  #error404 .container {
+    min-height: 75vh;
+  }
 }

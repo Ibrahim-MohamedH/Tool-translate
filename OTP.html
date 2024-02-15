@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool Translate</title>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/bootstrap/bootstrap.min.css"
+    />
+    <!-- font-awesome 6.5.1 -->
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/all.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar fixed-top">
+      <div class="container py-3">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/Logo.png"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+    </nav>
+    <!-- ===== End of Navbar ===== -->
+    <main>
+      <section id="OTP">
+        <div class="container py-5">
+          <div class="row align-items-center my-5 py-5">
+            <div class="col-lg-6 order-lg-1 order-2 text-center">
+              <h1
+                class="fw-bold lh-base col-xl-7 col-lg-8 col-md-8 mx-auto mb-3"
+              >
+                We Sent OTP Code To Verify Your Email
+              </h1>
+
+              <form
+                class="col-lg-8 col-md-10 mx-auto mb-5"
+                action=""
+                method="post"
+              >
+                <div class="form-group mb-4">
+                  <input
+                    maxlength="1"
+                    class="rounded-3 me-2 p-3"
+                    type="text"
+                    name="opt[]"
+                  />
+                  <input
+                    maxlength="1"
+                    class="rounded-3 me-2 p-3"
+                    type="text"
+                    name="opt[]"
+                  />
+                  <input
+                    maxlength="1"
+                    class="rounded-3 me-2 p-3"
+                    type="text"
+                    name="opt[]"
+                  />
+                  <input
+                    maxlength="1"
+                    class="rounded-3 p-3"
+                    type="text"
+                    name="opt[]"
+                  />
+                </div>
+                <div class="mb-4">
+                  <a href="#" class="text-reset">send again?</a>
+                </div>
+                <div class="form-group">
+                  <button class="btn col-lg-10 py-3 col-md-10 col-12 mx-auto">
+                    <i class="fa-regular fa-circle-check me-3"></i>Verify
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1 qrCode mb-5">
+              <div class="col-xl-7 col-lg-9 col-md-7 col-sm-8 col-11 mx-auto">
+                <div class="card p-3">
+                  <img
+                    src="./assets/images/qr-code.png"
+                    class="card-img-top mb-3"
+                    alt="qr-code"
+                  />
+                  <div class="card-body text-center px-sm-4 px-0">
+                    <h5 class="card-title fw-bold mb-3">
+                      you can scan qr code to verification email
+                    </h5>
+                    <p class="card-text">
+                      Scan the QR code to visit Frontend Mentor and take your
+                      coding skills to the next level
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Scripts -->
+    <!-- bootstrap script -->
+    <script src="./assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Main script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
