@@ -22,72 +22,539 @@
   <body>
     <!-- ===== Navbar ===== -->
     <header class="fixed-top">
-      <nav class="navbar navbar-expand-md px-md-1 px-2">
-        <div class="container">
-          <a class="navbar-brand fw-bold me-md-5 me-auto" href="./index.html">
-            <img src="./assets/images/Logo.png" alt="" class="img-fluid" />
-          </a>
-          <button
-            class="navbar-toggler order-md-1 order-2"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item me-2">
-                <a
-                  class="nav-link px-lg-2 px-1"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
-                  >Learning</a
-                >
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
-                  >Teams</a
-                >
-              </li>
-            </ul>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md px-md-1 px-2">
+          <div class="container">
+            <a class="navbar-brand fw-bold me-md-5 me-auto" href="./index.html">
+              <img src="./assets/images/Logo.png" alt="" class="img-fluid" />
+            </a>
+            <button
+              class="navbar-toggler order-md-1 order-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-2">
+                  <a
+                    class="nav-link px-lg-2 px-1"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a
+                    class="nav-link px-lg-2 px-1"
+                    aria-current="page"
+                    href="./allProjects.html"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
+                    >Learning</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
+                    >Teams</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a
+              class="btn my-0 rounded-circle order-md-2 order-1"
+              aria-current="page"
+              href="#"
+              ><img
+                width="48"
+                height="48"
+                class=""
+                src="./assets/images/profile.png"
+                alt=""
+            /></a>
           </div>
-          <a
-            class="btn my-0 rounded-circle order-md-2 order-1"
-            aria-current="page"
-            href="#"
-            ><img
-              width="48"
-              height="48"
-              class=""
-              src="./assets/images/profile.png"
-              alt=""
-          /></a>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <!-- ===== End of Navbar ===== -->
-    <main class="mt-5 pt-3">
-      <section class="test py-5 text-center">
-        <a class="btn btn-secondary" href="create-project.html"
-          >Create project page</a
-        >
-        <a class="btn btn-secondary" href="allProjects.html">All Projects</a>
-        <a class="btn btn-secondary" href="login.html">login</a>
-        <a class="btn btn-secondary" href="register.html">register</a>
+    <main class="mt-3 pt-3">
+      <section id="hero" class="pb-5">
+        <div class="container text-center">
+          <div class="row justify-content-around">
+            <div class="col-12 align-self-end">
+              <h1 class="fw-bold col-lg-6 mx-lg-auto">
+                The best Translator service for your business
+              </h1>
+            </div>
+            <div class="col-12 align-self-baseline">
+              <p class="col-lg-5 mx-lg-auto">
+                Translator Service enables your business and technology systems
+                to store and process large volumes of data in the digital realm.
+              </p>
+              <p class="col-lg-5 mx-lg-auto">
+                <a href="./login.html" class="btn btn-primary col-5 me-3 py-3"
+                  >Login</a
+                >
+                <a
+                  href="./register.html"
+                  class="btn btn-outline-light col-5 py-3"
+                  >Sign Up</a
+                >
+              </p>
+              <p>To create project must have account.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features" class="py-5">
+        <div class="container">
+          <h2 class="text-center fw-bold">Our Features</h2>
+          <p class="col-lg-6 mx-lg-auto text-center mb-5">
+            Lorem Ipsum is simply dummy text (meaning the intent is form, not
+            content) and is used by the printing and publishing industries.
+            Lorem Ipsum has been the standar
+          </p>
+          <div class="row">
+            <div
+              class="col-lg-6 align-self-center mb-lg-0 mb-5 pb-lg-0 pb-3 text-center"
+            >
+              <img src="./assets/images/feature.png" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-6">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12 col-md-6 mb-3">
+                    <div class="features-card p-3">
+                      <div class="container-fluid">
+                        <h4 class="fw-bold">
+                          <i class="fa-regular fa-image me-2"></i> Translate
+                          Image
+                        </h4>
+                        <div class="row">
+                          <div class="col-lg-7">
+                            <p>
+                              swiftly converts text between languages, promoting
+                              seamless communication across diverse linguistic
+                              contexts.
+                            </p>
+                          </div>
+                          <div class="col-lg-5">
+                            <a
+                              href="./create-project.html"
+                              class="btn col-lg-12 px-lg-0 px-5 py-2"
+                              >Create Project</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-6 mb-3">
+                    <div class="features-card p-3">
+                      <div class="container-fluid">
+                        <h4 class="fw-bold">
+                          <i class="fa-brands fa-youtube me-2"></i> Translate
+                          Video
+                        </h4>
+                        <div class="row">
+                          <div class="col-lg-7">
+                            <p>
+                              swiftly converts text between languages, promoting
+                              seamless communication across diverse linguistic
+                              contexts.
+                            </p>
+                          </div>
+                          <div class="col-lg-5">
+                            <a
+                              href="./create-project.html"
+                              class="btn col-lg-12 px-lg-0 px-5 py-2"
+                              >Create Project</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-6 mb-3">
+                    <div class="features-card p-3">
+                      <div class="container-fluid">
+                        <h4 class="fw-bold">
+                          <i class="fa-solid fa-microphone me-2"></i> Translate
+                          Audio
+                        </h4>
+                        <div class="row">
+                          <div class="col-lg-7">
+                            <p>
+                              swiftly converts text between languages, promoting
+                              seamless communication across diverse linguistic
+                              contexts.
+                            </p>
+                          </div>
+                          <div class="col-lg-5">
+                            <a
+                              href="./create-project.html"
+                              class="btn col-lg-12 px-lg-0 px-5 py-2"
+                              >Create Project</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-6 mb-3">
+                    <div class="features-card p-3">
+                      <div class="container-fluid">
+                        <h4 class="fw-bold">
+                          <i class="fa-regular fa-file-lines me-2"></i>
+                          Translate Text
+                        </h4>
+                        <div class="row">
+                          <div class="col-lg-7">
+                            <p>
+                              swiftly converts text between languages, promoting
+                              seamless communication across diverse linguistic
+                              contexts.
+                            </p>
+                          </div>
+                          <div class="col-lg-5">
+                            <a
+                              href="./create-project.html"
+                              class="btn col-lg-12 px-lg-0 px-5 py-2"
+                              >Create Project</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="py-5">
+        <div class="container pb-5">
+          <div class="row justify-content-md-around justify-content-center">
+            <div class="col-12 text-center text-light mb-4">
+              <h2 class="fw-bold">About</h2>
+              <h3>Translator solutions for your business.</h3>
+              <p class="col-lg-6 col-md-10 mx-md-auto">
+                Translator Service provided by Hub IT facilitates the storage,
+                transmission, analysis, and manipulation of large-scale data
+                within the digital landscape for your business and technology
+                systems.
+              </p>
+            </div>
+            <h2 class="text-center fw-bold mb-5 text-light">
+              Explore Our Service
+            </h2>
+            <div class="col-lg-5 col-11 col-md-8 p-sm-4 p-3 services-card mb-3">
+              <h3 class="fw-bold mb-3">
+                <i
+                  class="fa-solid fa-square-pen me-sm-3 me-1 rounded-circle"
+                ></i>
+                Business Communication
+              </h3>
+              <p>
+                swiftly converts text between languages, promoting seamless
+                communication across diverse linguistic contexts.
+              </p>
+            </div>
+            <div class="col-lg-5 col-11 col-md-8 p-sm-4 p-3 services-card mb-3">
+              <h3 class="fw-bold mb-3">
+                <i
+                  class="fa-solid fa-square-pen me-sm-3 me-1 rounded-circle"
+                ></i>
+                Business Communication
+              </h3>
+              <p>
+                swiftly converts text between languages, promoting seamless
+                communication across diverse linguistic contexts.
+              </p>
+            </div>
+            <div class="col-lg-5 col-11 col-md-8 p-sm-4 p-3 services-card mb-3">
+              <h3 class="fw-bold mb-3">
+                <i
+                  class="fa-solid fa-square-pen me-sm-3 me-1 rounded-circle"
+                ></i>
+                Business Communication
+              </h3>
+              <p>
+                swiftly converts text between languages, promoting seamless
+                communication across diverse linguistic contexts.
+              </p>
+            </div>
+            <div class="col-lg-5 col-11 col-md-8 p-sm-4 p-3 services-card mb-3">
+              <h3 class="fw-bold mb-3">
+                <i
+                  class="fa-solid fa-square-pen me-sm-3 me-1 rounded-circle"
+                ></i>
+                Business Communication
+              </h3>
+              <p>
+                swiftly converts text between languages, promoting seamless
+                communication across diverse linguistic contexts.
+              </p>
+            </div>
+            <div class="col-lg-5 col-11 col-md-8 p-sm-4 p-3 services-card mb-3">
+              <h3 class="fw-bold mb-3">
+                <i
+                  class="fa-solid fa-square-pen me-sm-3 me-1 rounded-circle"
+                ></i>
+                Business Communication
+              </h3>
+              <p>
+                swiftly converts text between languages, promoting seamless
+                communication across diverse linguistic contexts.
+              </p>
+            </div>
+            <div class="col-lg-5 col-11 col-md-8 p-sm-4 p-3 services-card mb-3">
+              <h3 class="fw-bold mb-3">
+                <i
+                  class="fa-solid fa-square-pen me-sm-3 me-1 rounded-circle"
+                ></i>
+                Business Communication
+              </h3>
+              <p>
+                swiftly converts text between languages, promoting seamless
+                communication across diverse linguistic contexts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="py-5">
+        <div class="container">
+          <h2 class="fw-bold text-center mb-3">
+            <span>Our Pricing Plan</span>
+          </h2>
+          <p class="text-center fw-semibold">
+            These planes are cost effect, highly valuable for your growth
+          </p>
+
+          <div class="row justify-content-center">
+            <div class="col-12 align-self-center mb-5 text-center">
+              <span class="me-4">Pay Monthly</span>
+              <label class="toggle-switch">
+                <input type="checkbox" />
+                <div class="toggle-switch-background">
+                  <div class="toggle-switch-handle"></div>
+                </div>
+              </label>
+              <span class="ms-4">Pay Yearly</span>
+            </div>
+            <div class="col-lg-4 col-md-7 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold mt-3">Free trail</h3>
+                  <p class="card-text">
+                    Ideal for individuals who need quick access to basic
+                    features.
+                  </p>
+                  <p class="card-text">
+                    <span class="fw-semibold display-1"
+                      >$<span class="price">0</span></span
+                    ><span class="fw-light fs-6">/ month</span>
+                  </p>
+                  <a href="#" class="btn col-12">Get Started Now</a>
+                  <ul class="list-unstyled mt-3">
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i
+                      >20,000+ of PNG & SVG graphics
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i
+                      >Access to 100 million stock images
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-xmark me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Upload custom icons and fonts
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-xmark me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Unlimited Sharing
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-xmark me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Upload graphics & video in up to 4k
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-xmark me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Unlimited Projects
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-xmark me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Instant Access to our design system
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-xmark me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Create teams to collaborate on designs
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-7 mb-4">
+              <div class="card pro">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold mt-3">professional</h3>
+                  <p class="card-text">
+                    Ideal for individuals who need quick access to basic
+                    features.
+                  </p>
+                  <p class="card-text">
+                    <span class="fw-semibold display-1"
+                      >$<span class="price">25</span></span
+                    ><span class="fw-light fs-6">/ month</span>
+                  </p>
+                  <a href="#" class="btn col-12">Get Started Now</a>
+                  <ul class="list-unstyled mt-3">
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i
+                      >20,000+ of PNG & SVG graphics
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i
+                      >Access to 100 million stock images
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Upload custom icons and fonts
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Unlimited Sharing
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Upload graphics & video in up to 4k
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Unlimited Projects
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-xmark me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Instant Access to our design system
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-xmark me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Create teams to collaborate on designs
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-7 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold mt-3">Team plane</h3>
+                  <p class="card-text">
+                    Ideal for individuals who need quick access to basic
+                    features.
+                  </p>
+                  <p class="card-text">
+                    <span class="fw-semibold display-1"
+                      >$<span class="price">100</span></span
+                    ><span class="fw-light fs-6">/ month</span>
+                  </p>
+                  <a href="#" class="btn col-12">Get Started Now</a>
+                  <ul class="list-unstyled mt-3">
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i
+                      >20,000+ of PNG & SVG graphics
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-3 me-md-2 me-1 p-2 rounded-circle"
+                      ></i
+                      >Access to 100 million stock images
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-1 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Upload custom icons and fonts
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-1 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Unlimited Sharing
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-1 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Upload graphics & video in up to 4k
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-1 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Unlimited Projects
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-1 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Instant Access to our design system
+                    </li>
+                    <li class="mb-2">
+                      <i
+                        class="fa-solid fa-check me-lg-1 me-md-2 me-1 p-2 rounded-circle"
+                      ></i>
+                      Create teams to collaborate on designs
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- ===== Start of Footer ===== -->
