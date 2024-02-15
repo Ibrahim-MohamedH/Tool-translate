@@ -15,8 +15,11 @@
   --purble: #4c0099;
   --light-one: #ffffff;
   --light-one: #fafafc;
+  --light-text: #888888;
   --mint-green: #03bc6c;
   --linear-blue: #2b6de6;
+  --input-bg: #f7fbff;
+  --border-main: #d4d7e3;
   /* linear gradiant */
   --linear-main: linear-gradient(
     90deg,
@@ -30,6 +33,8 @@
   /* fonts */
   --font-family-primary: "Cairo", sans-serif;
   --font-family-secondary: "Roboto", sans-serif;
+  /* Radius */
+  --main-radius: 12px;
 }
 * {
   font-family: var(--font-family-primary);
@@ -69,13 +74,13 @@ header nav .avatar .nav-link {
   color: var(--primary-text);
 }
 #createProject form input.form-control {
-  background-color: #f7fbff;
-  border: 1px solid #d4d7e3;
-  border-radius: 12px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-main);
+  border-radius: var(--main-radius);
   line-height: 2;
 }
 #createProject form .btn {
-  border-radius: 12px;
+  border-radius: var(--main-radius);
 }
 #createProject form .btn:first-child {
   background-color: var(--main-color-primary);
@@ -106,13 +111,13 @@ header nav .avatar .nav-link {
   color: var(--primary-text);
 }
 #access .socialite a {
-  background-color: #f7fbff;
-  border: 1px solid #d4d7e3;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-main);
 }
 #access input.form-control {
-  background-color: #f7fbff;
-  border: 1px solid #d4d7e3;
-  border-radius: 12px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-main);
+  border-radius: var(--main-radius);
 }
 #access .form-check-label {
   color: var(--Dark-one);
@@ -121,7 +126,89 @@ header nav .avatar .nav-link {
   line-height: 2;
 }
 /*--------------------------------------------------------------
-# Navbar
+# All-Projects page
+--------------------------------------------------------------*/
+#allProjects {
+  min-height: 85vh;
+}
+#allProjects .breadcrumb-item a {
+  color: black;
+  text-decoration: none;
+}
+#allProjects input,
+#allProjects select {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-main);
+}
+#allProjects input {
+  border-top-left-radius: var(--main-radius);
+  border-bottom-left-radius: var(--main-radius);
+}
+#allProjects select {
+  border-radius: var(--main-radius);
+}
+#allProjects #searchBtn {
+  border-top-right-radius: var(--main-radius);
+  border-bottom-right-radius: var(--main-radius);
+  background-color: var(--main-color-primary);
+  color: var(--light-one);
+}
+
+#allProjects a.btn {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-main);
+  border-radius: var(--main-radius);
+}
+#allProjects .card {
+  border-radius: var(--main-radius);
+  overflow: hidden;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#allProjects .card .card-body p {
+  color: var(--Dark-one);
+}
+#allProjects .card .card-body p i {
+  font-size: 32px;
+}
+#allProjects a.btn.newProjectBtn {
+  background-color: var(--Dark-two);
+  color: var(--light-one);
+}
+
+#allProjects .card .number {
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+/* projects cards color based on type */
+/* 
+  Video => Vcard
+  Audio => Acard
+  Image => Icard
+  Document => Dcard
+  
+*/
+#allProjects .Vcard {
+  background-color: var(--red);
+  color: var(--light-one);
+}
+#allProjects .Acard {
+  background-color: var(--lighter-primary);
+  color: var(--light-one);
+}
+
+#allProjects .Icard {
+  background-color: var(--green);
+  color: var(--light-one);
+}
+
+#allProjects .Dcard {
+  background-color: var(--Teal);
+  color: var(--light-one);
+}
+/*--------------------------------------------------------------
+# Footer
 --------------------------------------------------------------*/
 footer {
   background: var(--linear-main);

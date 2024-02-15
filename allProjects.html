@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool Translate</title>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/bootstrap/bootstrap.min.css"
+    />
+    <!-- font-awesome 6.5.1 -->
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/all.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-md px-md-1 px-2">
+        <div class="container">
+          <a class="navbar-brand fw-bold me-md-5 me-auto" href="./index.html">
+            <img src="./assets/images/Logo.png" alt="" class="img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler order-md-1 order-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-2">
+                <a
+                  class="nav-link px-lg-2 px-1"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
+                  >Learning</a
+                >
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
+                  >Teams</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a
+            class="btn my-0 rounded-circle order-md-2 order-1"
+            aria-current="page"
+            href="#"
+            ><img
+              width="48"
+              height="48"
+              class=""
+              src="./assets/images/profile.png"
+              alt=""
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <!-- ===== End of Navbar ===== -->
+    <main class="mt-5 pt-3">
+      <section id="allProjects" class="py-5">
+        <div class="container">
+          <nav aria-label="breadcrumb col-12">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item fw-bold"><a href="#">Home</a></li>
+              <li class="breadcrumb-item fw-bold">Library</li>
+            </ol>
+          </nav>
+          <form class="col-12 mb-3" action="" method="get">
+            <div class="row">
+              <div class="col-lg-6 col-md-5">
+                <div class="input-group mb-3">
+                  <a href="" class="btn me-3"
+                    ><i class="fa-solid fa-chevron-left"></i
+                  ></a>
+                  <input
+                    type="text"
+                    placeholder="Enter name the project"
+                    class="form-control"
+                    id="search"
+                  />
+                  <button class="btn" type="button" id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-4 col-3">
+                <select name="type" class="form-select">
+                  <option disabled selected>text</option>
+                </select>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-4 col-3">
+                <select name="month" class="form-select">
+                  <option disabled selected>num</option>
+                </select>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <a href="#" class="btn col-12 newProjectBtn">Create Project</a>
+              </div>
+            </div>
+          </form>
+          <div class="row">
+            <!-- Loop in case of video -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Vcard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Video (.mp4)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-brands fa-youtube"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of video -->
+            <!-- Loop in case of Audio -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Acard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Audio (.mp3)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-solid fa-microphone"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of Audio -->
+            <!-- Loop in case of Image -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Icard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Image (.jpg)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-regular fa-image"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of Image -->
+            <!-- Loop in case of Document -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Dcard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Text (.txt)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of Document -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Acard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Audio (.mp3)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-solid fa-microphone"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Dcard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Text (.txt)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Vcard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Video (.mp4)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-brands fa-youtube"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Dcard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Text (.txt)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Dcard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Text (.txt)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Dcard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Text (.docx)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Vcard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Video (.mkv)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-brands fa-youtube"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-header py-4 Acard">
+                  <span class="number px-2 me-2">1</span>
+                  Lec CS semester 1
+                </div>
+                <div class="card-body pe-0 pb-0">
+                  <div class="container-fluid">
+                    <div class="row align-items-center">
+                      <div class="col-8 p-2">
+                        <p class="m-0 fw-semibold">Type: Audio (.ogg)</p>
+                      </div>
+                      <div class="col-4 p-2 text-center">
+                        <p class="m-0">
+                          <i class="fa-solid fa-microphone"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1 mt-3" />
+                  <div class="container-fluid">
+                    <div class="row py-2">
+                      <div class="col-6">
+                        <p class="m-0">Last Updated</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="m-0 text-end">30/1/2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ===== Start of Footer ===== -->
+    <footer>
+      <nav class="py-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-2 text-md-start text-center mb-md-0 mb-4">
+              <a class="" href="./index.html">
+                <img src="./assets/images/Logo.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-md-7 text-center mb-md-0 mb-4">
+              <a href="#" class="btn"
+                ><img
+                  src="./assets/images/facebook.png"
+                  alt=""
+                  class="img-fluid" /></a
+              ><a href="#" class="btn"
+                ><img
+                  src="./assets/images/vk.png"
+                  alt=""
+                  class="img-fluid" /></a
+              ><a href="#" class="btn"
+                ><img
+                  src="./assets/images/ok.png"
+                  alt=""
+                  class="img-fluid" /></a
+              ><a href="#" class="btn"
+                ><img
+                  src="./assets/images/Google.png"
+                  alt=""
+                  class="img-fluid" /></a
+              ><a href="#" class="btn"
+                ><img src="./assets/images/R.png" alt="" class="img-fluid" /></a
+              ><a href="#" class="btn"
+                ><img src="./assets/images/x.png" alt="" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3 px-0 text-md-end text-center">
+              Copyright © 2024 Loc Camp
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <!-- ===== End of Footer ===== -->
+    <!-- Scripts -->
+    <!-- bootstrap script -->
+    <script src="./assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Main script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
