@@ -22,62 +22,77 @@
   <body>
     <!-- ===== Navbar ===== -->
     <header class="fixed-top">
-      <nav class="navbar navbar-expand-md px-md-1 px-2">
-        <div class="container">
-          <a class="navbar-brand fw-bold me-md-5 me-auto" href="./index.html">
-            <img src="./assets/images/Logo.png" alt="" class="img-fluid" />
-          </a>
-          <button
-            class="navbar-toggler order-md-1 order-2"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item me-2">
-                <a
-                  class="nav-link px-lg-2 px-1"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
-                  >Learning</a
-                >
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link px-lg-2 px-1" aria-current="page" href="#"
-                  >Teams</a
-                >
-              </li>
-            </ul>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md px-md-1 px-2">
+          <div class="container">
+            <a class="navbar-brand fw-bold me-md-5 me-auto" href="./index.html">
+              <img src="./assets/images/Logo.png" alt="" class="img-fluid" />
+            </a>
+            <button
+              class="navbar-toggler order-md-1 order-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1 active" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1" href="./allProjects.html"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1" href="#">Learning</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1" href="#">Teams</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1" href="./translate.html"
+                    >Translate</a
+                  >
+                </li>
+              </ul>
+              <!-- ===== Not Auth ===== -->
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item me-2">
+                  <a
+                    class="nav-link px-lg-4 px-3 mb-md-0 mb-2 signUp"
+                    href="./register.html"
+                    >sign up</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-4 px-3 signIn" href="./login.html"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+              <!-- ===== End of Not Auth ===== -->
+            </div>
+            <!-- ===== Auth ===== -->
+            <!-- <a class="btn my-0 rounded-circle order-md-2 order-1" href="#"
+              ><img
+                width="48"
+                height="48"
+                class=""
+                src="./assets/images/profile.png"
+                alt=""
+            /></a> -->
+            <!-- ===== End of Auth ===== -->
           </div>
-          <a
-            class="btn my-0 rounded-circle order-md-2 order-1"
-            aria-current="page"
-            href="#"
-            ><img
-              width="48"
-              height="48"
-              class=""
-              src="./assets/images/profile.png"
-              alt=""
-          /></a>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <!-- ===== End of Navbar ===== -->
     <main class="mt-5 pt-3">

@@ -101,6 +101,10 @@ header nav .nav-link.active {
 #hero {
   color: var(--light-one);
 }
+#hero .mainBtn {
+  color: var(--light-one);
+  background-color: var(--Darker-primary);
+}
 /*---------------
 # Features section
 ---------------*/
@@ -279,7 +283,7 @@ header nav .nav-link.active {
   background-color: var(--Dark-two);
 }
 /*--------------------------------------------------------------
-# login Page
+# login & register Page
 --------------------------------------------------------------*/
 #access .card {
   border: none;
@@ -313,6 +317,70 @@ header nav .nav-link.active {
   color: var(--Dark-one);
 }
 #access input.form-control {
+  line-height: 2;
+}
+/*--------------------------------------------------------------
+# create Project Page
+--------------------------------------------------------------*/
+#createProject h1,
+#createProject h4 {
+  color: black;
+}
+#createProject form label {
+  color: var(--primary-text);
+}
+#createProject form input.form-control {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-main);
+  border-radius: var(--main-radius);
+  line-height: 2;
+}
+#createProject form .btn {
+  border-radius: var(--main-radius);
+}
+#createProject form .btn:first-child {
+  background-color: var(--main-color-primary);
+}
+#createProject form .btn:last-child {
+  background-color: var(--Dark-two);
+}
+/*--------------------------------------------------------------
+# HumanSendFile Page
+--------------------------------------------------------------*/
+#HumanSendFile .card {
+  border: none;
+}
+#HumanSendFile h1 {
+  color: var(--primary-text);
+}
+#HumanSendFile h6 {
+  color: var(--secondary-text);
+}
+#HumanSendFile form button {
+  background-color: var(--main-color-primary);
+  color: var(--light-one);
+}
+#HumanSendFile form .form-check a {
+  color: var(--main-color-primary);
+}
+#HumanSendFile form label {
+  color: var(--primary-text);
+}
+#HumanSendFile .socialite a {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-main);
+}
+#HumanSendFile input.form-control {
+  background-color: var(--input-bg);
+}
+#HumanSendFile input.form-control:not([type="file"]) {
+  border: 1px solid var(--border-main);
+  border-radius: var(--main-radius);
+}
+#HumanSendFile .form-check-label {
+  color: var(--Dark-one);
+}
+#HumanSendFile input.form-control {
   line-height: 2;
 }
 /*--------------------------------------------------------------
