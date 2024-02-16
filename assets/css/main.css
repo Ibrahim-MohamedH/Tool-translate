@@ -552,6 +552,37 @@ header nav .nav-link.active {
   outline: none;
 }
 /*--------------------------------------------------------------
+# Translation page
+--------------------------------------------------------------*/
+#translation {
+  min-height: 88vh;
+}
+#translation select,
+#translation textarea,
+#translation .switch {
+  font-size: 28;
+  border: 1px solid var(--border-main);
+  border-radius: var(--main-radius);
+}
+#translation label {
+  color: var(--Dark-one);
+}
+#translation .download {
+  background-color: var(--light-text);
+  color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+#translation .save {
+  background-color: var(--main-color-primary);
+  color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+#translation .send {
+  background-color: var(--Dark-one);
+  color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 footer {

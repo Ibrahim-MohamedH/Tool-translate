@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool Translate</title>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/bootstrap/bootstrap.min.css"
+    />
+    <!-- font-awesome 6.5.1 -->
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/all.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <header class="fixed-top">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md px-md-1 px-2">
+          <div class="container">
+            <a class="navbar-brand fw-bold me-md-5 me-auto" href="./index.html">
+              <img src="./assets/images/Logo.png" alt="" class="img-fluid" />
+            </a>
+            <button
+              class="navbar-toggler order-md-1 order-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1 active" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1" href="./allProjects.html"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1" href="#">Learning</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1" href="#">Teams</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-2 px-1" href="./translate.html"
+                    >Translate</a
+                  >
+                </li>
+              </ul>
+              <!-- ===== Not Auth ===== -->
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item me-2">
+                  <a
+                    class="nav-link px-lg-4 px-3 mb-md-0 mb-2 signUp"
+                    href="./register.html"
+                    >sign up</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link px-lg-4 px-3 signIn" href="./login.html"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+              <!-- ===== End of Not Auth ===== -->
+            </div>
+            <!-- ===== Auth ===== -->
+            <!-- <a class="btn my-0 rounded-circle order-md-2 order-1" href="#"
+              ><img
+                width="48"
+                height="48"
+                class=""
+                src="./assets/images/profile.png"
+                alt=""
+            /></a> -->
+            <!-- ===== End of Auth ===== -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ===== End of Navbar ===== -->
+    <main class="mt-3 pt-3">
+      <section id="translation" class="py-5">
+        <div class="container pt-5">
+          <form action="" method="post">
+            <div class="row justify-content-between mb-3">
+              <div class="col-md-5 col-9 oreder-md-1 order-2 form-group">
+                <select
+                  class="form-select"
+                  name="targetLanguage"
+                  id="targetLanguage"
+                >
+                  <option value="english">English</option>
+                  <option value="chinese">Chinese</option>
+                </select>
+              </div>
+              <div
+                class="col-md-2 col-3 order-md-2 order-3 text-center px-md-0 ps-0"
+              >
+                <button class="btn switch px-sm-4 px-3 fw-bold">
+                  <i class="fa-solid fa-repeat"></i>
+                </button>
+              </div>
+              <div class="col-md-5 order-md-3 order-1 mb-md-0 mb-3">
+                <select
+                  class="form-select"
+                  name="sourceLanguage"
+                  id="sourceLanguage"
+                >
+                  <option value="auto">Auto Detect Language</option>
+                  <option value="arabic">اللغة العربية</option>
+                  <option value="bulgarian">Bulgarian</option>
+                </select>
+              </div>
+            </div>
+            <!-- 
+              TODO:
+              - Add Icons inside TextAreas
+              -->
+            <div class="row justify-content-end">
+              <div class="col-lg-6 order-lg-1 order-2 mb-lg-0 mb-3">
+                <div class="form-group form-floating">
+                  <textarea
+                    style="min-height: 350px"
+                    name="targetOutput"
+                    id="targetOutput"
+                    class="form-control"
+                    cols="30"
+                    rows="14"
+                    readonly
+                  ></textarea>
+                  <label for="targetOutput">English</label>
+                </div>
+              </div>
+              <div class="col-lg-6 order-lg-2 order-1 mb-3">
+                <div class="form-group mb-lg-2 mb-3">
+                  <select name="type" id="type" class="form-select">
+                    <option value="text">Text</option>
+                    <option value="image">Image</option>
+                  </select>
+                </div>
+                <div class="form-floating">
+                  <textarea
+                    style="min-height: 300px"
+                    name="sourceInput"
+                    id="sourceInput"
+                    class="form-control"
+                    cols="30"
+                    rows="12"
+                  ></textarea>
+                  <label for="sourceInput">اللغة العربية</label>
+                </div>
+              </div>
+              <div class="col-lg-6 text-end order-3">
+                <div class="container-fluid">
+                  <div
+                    class="row justify-content-sm-end justify-content-between"
+                  >
+                    <a
+                      href="#"
+                      class="btn py-2 download order-sm-1 me-sm-2 me-0 order-2 col-sm-3 col-4"
+                      >Download</a
+                    >
+                    <button
+                      class="btn py-2 send order-sm-2 me-sm-2 me-0 order-3 col-sm-4 col-7"
+                    >
+                      Send to Quality
+                    </button>
+                    <button
+                      class="btn py-2 save order-sm-3 order-1 mb-sm-0 mb-3 col-sm-4"
+                    >
+                      Save project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- ===== Start of Footer ===== -->
+    <footer>
+      <nav class="py-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-2 text-md-start text-center mb-md-0 mb-4">
+              <a class="" href="./index.html">
+                <img src="./assets/images/Logo.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="col-md-7 text-center mb-md-0 mb-4">
+              <a href="#" class="btn px-sm-3 px-1"
+                ><img
+                  src="./assets/images/facebook.png"
+                  alt=""
+                  class="img-fluid" /></a
+              ><a href="#" class="btn px-sm-3 px-1"
+                ><img
+                  src="./assets/images/vk.png"
+                  alt=""
+                  class="img-fluid" /></a
+              ><a href="#" class="btn px-sm-3 px-1"
+                ><img
+                  src="./assets/images/ok.png"
+                  alt=""
+                  class="img-fluid" /></a
+              ><a href="#" class="btn px-sm-3 px-1"
+                ><img
+                  src="./assets/images/Google.png"
+                  alt=""
+                  class="img-fluid" /></a
+              ><a href="#" class="btn px-sm-3 px-1"
+                ><img src="./assets/images/R.png" alt="" class="img-fluid" /></a
+              ><a href="#" class="btn px-sm-3 px-1"
+                ><img src="./assets/images/x.png" alt="" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3 px-0 text-md-end text-center">
+              Copyright © 2024 Loc Camp
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <!-- ===== End of Footer ===== -->
+    <!-- Scripts -->
+    <!-- bootstrap script -->
+    <script src="./assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Main script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
