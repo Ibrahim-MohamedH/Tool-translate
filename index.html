@@ -22,14 +22,14 @@
   <body>
     <!-- ===== Navbar ===== -->
     <header class="fixed-top">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-md px-md-1 px-2">
+      <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg px-md-1 px-2">
           <div class="container">
-            <a class="navbar-brand fw-bold me-md-5 me-auto" href="./index.html">
+            <a class="navbar-brand fw-bold me-lg-5 me-auto" href="./index.html">
               <img src="./assets/images/Logo.png" alt="" class="img-fluid" />
             </a>
             <button
-              class="navbar-toggler order-md-1 order-2"
+              class="navbar-toggler order-lg-1 order-2"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -62,8 +62,70 @@
                     >Translate</a
                   >
                 </li>
-                <li class="nav-item me-2">
-                  <a class="nav-link px-lg-2 px-1 allpages">All Pages</a>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    All Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item px-0">
+                      <a href="./allProjects.html" class="text-reset px-4"
+                        >All Projects</a
+                      >
+                      <a href="./create-project.html" class="text-reset px-4"
+                        >Create Project</a
+                      >
+                    </li>
+                    <li class="dropdown-item px-0">
+                      <a href="./error404.html" class="text-reset px-4"
+                        >Error 404 page</a
+                      >
+                      <a href="./HumanSendFile.html" class="text-reset px-4"
+                        >Send File to Human</a
+                      >
+                    </li>
+                    <li class="dropdown-item px-0">
+                      <a
+                        href="./InputOutputTranslate.html"
+                        class="text-reset px-4"
+                        >Translation page</a
+                      >
+                      <a href="./login.html" class="text-reset px-4">Login</a>
+                    </li>
+                    <li class="dropdown-item px-0">
+                      <a href="./register.html" class="text-reset px-4"
+                        >Register</a
+                      >
+                      <a href="./OTP.html" class="text-reset px-4">OTP</a>
+                    </li>
+                    <li class="dropdown-item px-0">
+                      <a href="./verification.html" class="text-reset px-4"
+                        >verification</a
+                      >
+                      <a href="./translate.html" class="text-reset px-4"
+                        >translate options</a
+                      >
+                    </li>
+                    <li class="dropdown-item px-0">
+                      <a href="./invite.html" class="text-reset px-4">Invite</a>
+                      <a href="./pricePlanInfo.html" class="text-reset px-4"
+                        >Price Plan</a
+                      >
+                    </li>
+                    <li class="dropdown-item px-0">
+                      <a href="./profile.html" class="text-reset px-4"
+                        >Profile</a
+                      >
+                      <a href="./editProfile.html" class="text-reset px-4"
+                        >Edit Profile</a
+                      >
+                    </li>
+                  </ul>
                 </li>
               </ul>
               <!-- ===== Not Auth ===== -->
@@ -84,14 +146,14 @@
               <!-- ===== End of Not Auth ===== -->
             </div>
             <!-- ===== Auth ===== -->
-            <!-- <a class="btn my-0 rounded-circle order-md-2 order-1" href="#"
+            <a class="btn my-0 rounded-circle order-lg-2 order-1" href="#"
               ><img
                 width="48"
                 height="48"
                 class=""
                 src="./assets/images/profile.png"
                 alt=""
-            /></a> -->
+            /></a>
             <!-- ===== End of Auth ===== -->
           </div>
         </nav>
@@ -650,62 +712,10 @@
         border-radius: 12px;
       }
     </style>
-    <div class="allLinks hidden">
-      <div class="container col-lg-5 col-md-7 col-12 pt-5 mt-5">
-        <div class="row">
-          <div class="col-12 p-5">
-            <ol class="unstyled-list">
-              <li>
-                <a href="./allProjects.html" class="btn">All Projects</a>
-              </li>
-              <li>
-                <a href="./create-project.html" class="btn">Create Project</a>
-              </li>
-              <li>
-                <a href="./error404.html" class="btn">Error 404 page</a>
-              </li>
-              <li>
-                <a href="./HumanSendFile.html" class="btn"
-                  >Send File to Human</a
-                >
-              </li>
-              <li>
-                <a href="./InputOutputTranslate.html" class="btn"
-                  >Translation page</a
-                >
-              </li>
-              <li>
-                <a href="./login.html" class="btn">Login</a>
-              </li>
-
-              <li>
-                <a href="./OTP.html" class="btn">OTP</a>
-              </li>
-              <li>
-                <a href="./verification.html" class="btn">verification</a>
-              </li>
-              <li>
-                <a href="./translate.html" class="btn">translate options</a>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- ===== End of Footer ===== -->
     <!-- Scripts -->
     <!-- bootstrap script -->
     <script src="./assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
-    <script>
-      let allpages = document.querySelector(".allpages");
-      let allLinks = document.querySelector(".allLinks");
-      allpages.addEventListener("click", () => {
-        allLinks.classList.remove("hidden");
-      });
-      allLinks.addEventListener("click", () => {
-        allLinks.classList.add("hidden");
-      });
-    </script>
     <!-- Main script -->
     <script src="./assets/js/main.js"></script>
   </body>

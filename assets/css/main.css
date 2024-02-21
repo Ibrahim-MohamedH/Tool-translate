@@ -14,9 +14,10 @@
   --blue: #0063f7;
   --purble: #4c0099;
   --light-one: #ffffff;
-  --light-one: #fafafc;
+  /* --light-one: #fafafc; */
   --light-text: #888888;
   --light-text2: #666666;
+  --light-text-3: #4d4d4d;
   --mint-green: #03bc6c;
   --linear-blue: #2b6de6;
   --input-bg: #f7fbff;
@@ -49,7 +50,7 @@
 --------------------------------------------------------------*/
 header {
   background-color: var(--light-one);
-  overflow: hidden;
+
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
 }
@@ -59,7 +60,8 @@ header > .container-fluid {
 header nav {
   background-color: #a1a1a1;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
 }
@@ -238,6 +240,10 @@ header nav .nav-link.active {
   color: var(--light-one);
   border: none;
 }
+#pricing .card {
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+  border-radius: var(--main-radius);
+}
 #pricing .card a.btn {
   border: 1px solid var(--main-color-primary);
   color: var(--main-color-primary);
@@ -370,12 +376,25 @@ header nav .nav-link.active {
   background-color: var(--input-bg);
   border: 1px solid var(--border-main);
 }
-#HumanSendFile input.form-control {
+#HumanSendFile select {
+  background-color: transparent;
+  border: 0;
+}
+#HumanSendFile select:focus-visible,
+#HumanSendFile select:focus {
+  outline: none;
+  box-shadow: none;
+}
+#HumanSendFile input.form-control,
+#HumanSendFile textarea.form-control {
   background-color: var(--input-bg);
 }
 #HumanSendFile input.form-control:not([type="file"]) {
   border: 1px solid var(--border-main);
   border-radius: var(--main-radius);
+}
+#HumanSendFile input#HsendFileDoc::file-selector-button {
+  display: none;
 }
 #HumanSendFile .form-check-label {
   color: var(--Dark-one);
@@ -383,6 +402,41 @@ header nav .nav-link.active {
 #HumanSendFile input.form-control {
   line-height: 2;
 }
+#HumanSendFile .fileUpload {
+  background-color: var(--main-color-primary);
+  color: var(--light-one);
+}
+/* ===================== */
+#HSF .send,
+#translation .send {
+  background-color: var(--Dark-one);
+  color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+#HSF {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 88vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 4;
+}
+#HSF .container > .row {
+  min-height: 88vh;
+}
+#HSF .row .hsf-alert {
+  background-color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+#HSF .row .cancel {
+  background-color: var(--light-one);
+  border-color: var(--Dark-one);
+  color: var(--Dark-one);
+}
+/* =================== */
 /*--------------------------------------------------------------
 # All-Projects page
 --------------------------------------------------------------*/
@@ -523,8 +577,35 @@ header nav .nav-link.active {
   color: var(--light-one);
 }
 /*--------------------------------------------------------------
-# Verification, OTP page
+# Verification, OTP, & Invitation page
 --------------------------------------------------------------*/
+#invite > .container > .row {
+  min-height: 100vh;
+}
+#invite .inviting {
+  border: 1px solid var(--border-main);
+  border-radius: var(--main-radius);
+  background-color: var(--light-one);
+  box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.2);
+}
+#invite .social a.btn {
+  border: 1px solid var(--border-main);
+  border-radius: var(--main-radius);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#invite form .skip {
+  border: 1px solid var(--Dark-one);
+  color: var(--Dark-one);
+  border-radius: var(--main-radius);
+}
+#invite form button {
+  background: var(--linear-text);
+  background-repeat: no-repeat;
+  color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+#invite,
 #OTP,
 #verification {
   min-height: 100vh;
@@ -577,9 +658,230 @@ header nav .nav-link.active {
   color: var(--light-one);
   border-radius: var(--main-radius);
 }
+#QA .send,
 #translation .send {
   background-color: var(--Dark-one);
   color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+#QA {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 88vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 4;
+}
+#QA .container > .row {
+  min-height: 88vh;
+}
+#QA .row .sqa-alert {
+  background-color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+#QA .row .cancel {
+  background-color: var(--light-one);
+  border-color: var(--Dark-one);
+  color: var(--Dark-one);
+}
+.hidden {
+  display: none;
+}
+/*--------------------------------------------------------------
+# PricePlan page
+--------------------------------------------------------------*/
+/*--------------------------
+# top-content section
+--------------------------*/
+#top-content {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#top-content p,
+#top-content span {
+  color: var(--light-one);
+}
+/* =================================================== */
+#top-content .toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#top-content .toggle-switch input[type="checkbox"] {
+  display: none;
+}
+
+#top-content .toggle-switch-background {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-one);
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px var(--light-one);
+  transition: background-color 0.3s ease-in-out;
+}
+
+#top-content .toggle-switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--Darker-primary);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+#top-content
+  .toggle-switch
+  input[type="checkbox"]:checked
+  + .toggle-switch-background {
+  background-color: var(--lighter-primary);
+  box-shadow: inset 0 0 0 2px var(--light-one);
+}
+
+#top-content
+  .toggle-switch
+  input[type="checkbox"]:checked
+  + .toggle-switch:before {
+  content: "On";
+  color: var(--lighter-primary);
+  right: -15px;
+}
+
+#top-content
+  .toggle-switch
+  input[type="checkbox"]:checked
+  + .toggle-switch-background
+  .toggle-switch-handle {
+  transform: translateX(20px);
+  background-color: var(--light-one);
+}
+
+/*--------------------------
+# pricePlan section
+--------------------------*/
+#pricePlan {
+  margin-top: -150px;
+}
+
+#pricePlan .pro {
+  background-color: var(--main-color-primary);
+  color: var(--light-one);
+  border: none;
+}
+#pricePlan .card {
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+  border-radius: var(--main-radius);
+}
+#pricePlan .card a.btn {
+  border: 1px solid var(--main-color-primary);
+  color: var(--main-color-primary);
+  background-color: var(--light-one);
+}
+
+#pricePlan .card a.btn:hover {
+  border: 1px solid var(--light-one);
+  color: var(--light-one);
+  background-color: var(--main-color-primary);
+}
+
+#pricePlan .list-unstyled i.fa-check {
+  color: var(--Darker-primary);
+  background-color: #e8edfb;
+}
+
+#pricePlan .list-unstyled i.fa-xmark {
+  background-color: #f7f8f9;
+  color: var(--Dark-one);
+}
+/*--------------------------
+# pricePlan section
+--------------------------*/
+#moreDetails .details-card {
+  border: 1px solid var(--border-main);
+  border-radius: var(--main-radius);
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+}
+/*--------------------------------------------------------------
+# Reels page
+--------------------------------------------------------------*/
+#reels-hero {
+  background: var(--linear-text);
+  color: var(--light-one);
+}
+#reels-hero a.btn {
+  background-color: var(--light-one);
+  color: var(--main-color-primary);
+  border-radius: var(--main-radius);
+}
+/*--------------------------------------------------------------
+# profile page
+--------------------------------------------------------------*/
+#profile {
+  background: var(--linear-text);
+  color: var(--light-one);
+}
+#profile label {
+  border: 1px solid var(--light-one);
+  border-radius: var(--main-radius);
+  color: var(--light-one);
+}
+#editProfile form > .row,
+#profileDetails > .container > .row {
+  border: 1px solid var(--border-main);
+  border-radius: var(--main-radius);
+}
+#editProfile button.btn,
+#profileDetails a.btn {
+  background: var(--linear-text);
+  background-repeat: no-repeat;
+  color: var(--light-one);
+  border-radius: var(--main-radius);
+}
+#editProfile label,
+#profileDetails label {
+  color: var(--light-text-3);
+  font-size: 20px;
+}
+#editProfile input.form-control,
+#profileDetails input.form-control {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--Dark-one);
+  border-radius: var(--main-radius);
+}
+#editProfile input.form-control {
+  font-size: 20px;
+  background-color: var(--input-bg);
+  border-color: var(--border-main);
+}
+#profileDetails input.form-control {
+  border: none;
+}
+#editProfile select {
+  background-color: transparent;
+  border: 0;
+}
+#editProfile select:focus-visible,
+#editProfile select:focus {
+  outline: none;
+  box-shadow: none;
+}
+#editProfile a.btn {
+  color: var(--Dark-one);
+  border: 1px solid var(--Dark-one);
   border-radius: var(--main-radius);
 }
 /*--------------------------------------------------------------
@@ -601,12 +903,21 @@ footer {
 # media Query
 --------------------------------------------------------------*/
 @media (max-width: 992px) {
+  #invite,
+  #OTP,
   #verification {
     background-image: url(../images/elipse-md.png);
   }
 }
 
 @media (max-width: 576px) {
+  #invite .inviting {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  #invite,
+  #OTP,
   #verification {
     background-image: url(../images/elipse-sm.png);
   }

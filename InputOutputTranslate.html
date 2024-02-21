@@ -131,7 +131,8 @@
             </div>
             <!-- 
               TODO:
-              - Add Icons inside TextAreas
+              - add JS to change submit for QA after confirming.
+              - Add Icons inside TextAreas.
               -->
             <div class="row justify-content-end">
               <div class="col-lg-6 order-lg-1 order-2 mb-lg-0 mb-3">
@@ -195,6 +196,41 @@
         </div>
       </section>
     </main>
+    <div id="QA" class="hidden">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 col-md-8 col-11 sqa-alert py-5">
+            <h1 class="text-center fw-bold">Quality Assurance Checks</h1>
+            <p class="text-center px-lg-5 px-md-3 px-0 mb-4">
+              • our website will can incorporate quality assurance checks
+              toensure the accuracy, fluency, and adherence to industry
+              standards in translated trade-related content. This
+              includesspell-checking, grammar verification, and consistency
+              checks tomaintain high-quality translations.
+            </p>
+            <div class="container-fluid">
+              <div class="row text-center justify-content-center">
+                <div class="col-sm-4 col-9 order-sm-1 order-2">
+                  <button class="btn cancel py-2 col-12">Cancel</button>
+                </div>
+                <div
+                  class="col-xl-5 col-lg-6 col-md-5 col-sm-5 col-9 order-sm-2 order-1 mb-md-0 mb-3"
+                >
+                  <!-- TODO:
+                  -change the action of this form depending on backend
+                -->
+                  <form action="">
+                    <button class="btn send py-2 col-12">
+                      Send to Quality
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ===== Start of Footer ===== -->
     <footer>
       <nav class="py-3">
@@ -241,6 +277,22 @@
     </footer>
     <!-- ===== End of Footer ===== -->
     <!-- Scripts -->
+    <script>
+      let QA = document.querySelector("#QA");
+      let QAbutton = document.querySelector("#translation .send");
+      let SQAbutton = document.querySelector("#QA .send");
+      let cancel = document.querySelector("#QA .cancel");
+
+      QAbutton.addEventListener("click", (e) => {
+        e.preventDefault();
+        QA.classList.remove("hidden");
+      });
+      let hideQA = () => {
+        QA.classList.add("hidden");
+      };
+      QA.addEventListener("click", hideQA);
+      cancel.addEventListener("click", hideQA);
+    </script>
     <!-- bootstrap script -->
     <script src="./assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- Main script -->

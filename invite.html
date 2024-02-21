@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool Translate</title>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/bootstrap/bootstrap.min.css"
+    />
+    <!-- font-awesome 6.5.1 -->
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/all.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar fixed-top">
+      <div class="container py-3">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/Logo.png"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+    </nav>
+    <!-- ===== End of Navbar ===== -->
+    <main>
+      <section id="invite">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-1 order-2">
+              <div class="col-sm-11 mb-sm-5 mx-auto inviting pt-5 pb-sm-0 pb-5">
+                <h4 class="fw-bold lh-base col-11 mx-auto mb-3">
+                  Add people to our translator system
+                  <!-- 
+                    TODO:
+                    - Implement a three dots to copy main / website link
+                   -->
+                </h4>
+
+                <form class="col-11 mx-auto mb-5" action="" method="post">
+                  <div class="form-group mb-4">
+                    <label for="email">Email</label>
+                    <input
+                      class="form-control"
+                      id="email"
+                      type="email"
+                      name="email"
+                      autocomplete="email"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <p class="fw-semibold mb-1">Or use</p>
+                    <div class="row mb-4">
+                      <div class="col-4 px-1 social">
+                        <a href="" class="btn col-12 px-0"
+                          ><img
+                            class="me-2"
+                            src="./assets/images/Google.png"
+                            alt=""
+                          />
+                          Google</a
+                        >
+                      </div>
+                      <div class="col-4 px-1 social">
+                        <a href="" class="btn col-12 px-0"
+                          ><img
+                            class="me-2 mb-sm-0 mb-1"
+                            src="./assets/images/facebook-logo.svg"
+                            alt=""
+                          />
+                          Facebook</a
+                        >
+                      </div>
+                      <div class="col-4 px-1 social">
+                        <a href="" class="btn col-12 px-0"
+                          ><img
+                            class="me-2 mb-sm-0 mb-2"
+                            src="./assets/images/Microsoft.png"
+                            alt=""
+                          />
+                          Microsoft</a
+                        >
+                      </div>
+                    </div>
+                    <p>
+                      This site is protected by reCAPTCHA and the google
+                      <a href="#" class="text-decoration-none">Privacy Policy</a
+                      >and
+                      <a href="#" class="text-decoration-none"
+                        >Term of Service</a
+                      >
+                      apply.
+                    </p>
+                    <button
+                      type="submit"
+                      class="btn me-2 col-md-3 col-sm-4 col-5"
+                    >
+                      Invite
+                    </button>
+                    <a href="#" class="btn social col-md-3 col-sm-4 col-5 skip"
+                      >Skip</a
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1 mb-5">
+              <div class="col-12">
+                <img
+                  src="./assets/images/phone_invite.png"
+                  class="img-fluid mb-3"
+                  alt="phone-code"
+                />
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <a href="#" class="me-2"
+                  ><img
+                    class="img-fluid"
+                    src="./assets/images/appstore.png"
+                    alt=""
+                /></a>
+                <a href="#" class=""
+                  ><img
+                    class="img-fluid"
+                    src="./assets/images/googleplay.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Scripts -->
+    <!-- bootstrap script -->
+    <script src="./assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Main script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
